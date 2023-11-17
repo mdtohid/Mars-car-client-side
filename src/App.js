@@ -10,40 +10,13 @@ import { useEffect, useRef, useState } from 'react';
 import getElementId from './useHooks/getElementId';
 import YouTube from 'react-youtube';
 import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
 
 function App() {
   return (
     <div className="slides">
       <Header></Header>
-
-      <div id='noBgBlack' className='slide'>
-        <img src='https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD' alt="" />
-      </div>
-      <div id='noBgBlack' className='slide'>
-        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/425_HP_SolarPanels_D" alt="" />
-      </div>
-      <div id='noBgBlack' className='slide'>
-        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-Desktop.jpg" alt="" />
-      </div>
-      <div id='noBgBlack' className='slide'>
-        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg" alt="" />
-      </div>
-      <div id='bgBlack' className='slide'>
-        <img src={img4} alt="" />
-      </div>
-
-      {/* <div id='noBgBlack' className='slide'>
-        <img src={img6} alt="" />
-      </div>
-      <div id='noBgBlack' className='slide'>
-        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD" alt="" />
-      </div>
-      <div id='bgBlack' className='slide'>
-        <img src={img4} alt="" />
-      </div>
-      <div id='bgBlack' className='slide'>
-        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg" alt="" />
-      </div> */}
+      <Home></Home>
     </div>
   );
 }

@@ -34,7 +34,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div onMouseLeave={handleMouseLeave} className={`sticky top-0 font-serif ${inViewElementId === 'bgBlack' ? 'text-white' : 'text-black'}
+        <div onMouseLeave={handleMouseLeave} className={`sticky top-0 z-10 font-serif ${inViewElementId === 'bgBlack' ? 'text-white' : 'text-black'}
       ${isFocused && 'bg-white !text-black'}`}>
             <div className='flex gap-10 mx-auto w-fit py-3'>
                 <button onMouseEnter={() => handleMouseEnter('vehicle')}
@@ -46,6 +46,7 @@ const Header = () => {
 
                 <button onMouseEnter={() => handleMouseEnter('shop')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'shop' && 'bg-slate-100'}`}>Shop</button>
             </div>
+
             <div>
                 {
                     focusedIn === 'vehicle' &&

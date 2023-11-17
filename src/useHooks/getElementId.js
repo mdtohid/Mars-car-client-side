@@ -10,12 +10,12 @@ const getElementId = ({ setInViewElementId }) => {
     // setSelectedElements(Array.from(selectedElements));
 
     // Define a callback function to handle intersections
-    function handleIntersection(entries) {
-        entries.forEach((entry) => {
+     function handleIntersection(entries) {
+        entries.forEach(async(entry) => {
             if (entry.isIntersecting) {
                 // Element is in view, log its ID
                 // console.log(`Element in view: ${entry.target.id}`);
-                setInViewElementId(entry.target.id);
+                await setInViewElementId(entry.target.id);
             }
         });
     }
