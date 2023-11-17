@@ -1,0 +1,148 @@
+[
+    {
+        "id": "vehicles",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-S.png",
+                "title": "Model S"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-3.png",
+                "title": "Model 3"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-X.png",
+                "title": "Model X"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png",
+                "title": "Model Y"
+            }
+        ]
+    },
+    {
+        "id": "energy",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png",
+                "links": [
+                    {
+                        "href": "/solarpanels",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/energy/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Solar Panels"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png",
+                "links": [
+                    {
+                        "href": "/solarroof",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/solarroof/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Solar Roof"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Powerwall-US.png",
+                "links": [
+                    {
+                        "href": "/powerwall",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/powerwall/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Powerwall"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png",
+                "links": [
+                    {
+                        "href": "/megapack",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/megapack/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Megapack"
+            }
+        ]
+    },
+    {
+        "id": "charging",
+        "products": [
+            {
+              "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Charging.png",
+              "links": [
+                {
+                  "href": "/charging",
+                  "text": "Learn"
+                }
+              ],
+              "title": "Charging"
+            },
+            {
+              "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png",
+              "links": [
+                {
+                  "href": "/home-charging",
+                  "text": "Learn"
+                },
+                {
+                  "href": "https://shop.tesla.com/category/charging#charging.at-home",
+                  "text": "Shop"
+                }
+              ],
+              "title": "Home Charging"
+            },
+            {
+              "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Supercharging-NA.png",
+              "links": [
+                {
+                  "href": "/supercharger",
+                  "text": "Learn"
+                },
+                {
+                  "href": "/findus",
+                  "text": "Find"
+                }
+              ],
+              "title": "Supercharging"
+            }
+          ]
+    },
+    {
+        "id": "shop",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Charging.png",
+                "title": "Charging"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Vehicle-Accessories.png",
+                "title": "Vehicle Accessories"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Apparel.png",
+                "title": "Apparel"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Lifestyle.png",
+                "title": "Lifestyle"
+            }
+        ]
+    }
+]
