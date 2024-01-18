@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import getElementId from '../../useHooks/getElementId';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
-const Header = () => {
+const Header = ({ openModal }) => {
     // const [selectedElements, setSelectedElements] = useState([]);
     const [inViewElementId, setInViewElementId] = useState(''); // New state variable
-    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         getElementId({ setInViewElementId });
@@ -14,6 +15,8 @@ const Header = () => {
     // navbar 
     const [isFocused, setIsFocused] = useState(false);
     const [focusedIn, setFocusedIn] = useState('');
+
+    console.log(isFocused);
 
     const handleMouseLeave = () => {
         setIsFocused(false);
@@ -26,82 +29,49 @@ const Header = () => {
         console.log(isFocused)
     };
 
+    const [productsList, setProductsList] = useState([]);
 
     useEffect(() => {
         fetch('processTeslaApi.json')
             .then(res => res.json())
-            .then(data => setProducts(data))
+            .then(data => setProductsList(data))
     }, []);
 
+    // ..........................................
+
+
     return (
-        <div onMouseLeave={handleMouseLeave} className={`sticky top-0 z-10 font-serif ${inViewElementId === 'bgBlack' ? 'text-white' : 'text-black'}
-      ${isFocused && 'bg-white !text-black'}`}>
-            <div className='flex gap-10 mx-auto w-fit py-3'>
-                <button onMouseEnter={() => handleMouseEnter('vehicle')}
-                    className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100	 ${focusedIn === 'vehicle' && 'bg-slate-100'}`}>Vehicles</button>
+        <div onMouseLeave={handleMouseLeave} className={`sticky top-0 z-20 font-serif ${inViewElementId === 'bgBlack' ? 'text-white' : 'text-black'} ${isFocused && 'bg-white !text-black'}`}>
+            <div className='flex justify-between items-center py-3 px-8'>
+                <h3>Tesla</h3>
 
-                <button onMouseEnter={() => handleMouseEnter('energy')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'energy' && 'bg-slate-100'}`}>Energy</button>
+                <div className='w-fit mx-auto hidden lg:flex gap-x-6'>
+                    <button onMouseEnter={() => handleMouseEnter('vehicles')}
+                        className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100	 ${focusedIn === 'vehicles' && 'bg-slate-100'}`}>Vehicles</button>
 
-                <button onMouseEnter={() => handleMouseEnter('charging')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'charging' && 'bg-slate-100'}`}>Charging</button>
+                    <button onMouseEnter={() => handleMouseEnter('energy')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'energy' && 'bg-slate-100'}`}>Energy</button>
 
-                <button onMouseEnter={() => handleMouseEnter('shop')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'shop' && 'bg-slate-100'}`}>Shop</button>
+                    <button onMouseEnter={() => handleMouseEnter('charging')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'charging' && 'bg-slate-100'}`}>Charging</button>
+
+                    <button onMouseEnter={() => handleMouseEnter('shop')} className={`px-2.5 py-1.5 rounded-lg hover:bg-slate-100 ${focusedIn === 'shop' && 'bg-slate-100'}`}>Shop</button>
+                </div>
+
+                <button className='btnGlass lg:hidden' onClick={() => { openModal('nabvarModal') }}>Open Modal</button>
             </div>
 
             <div>
-                {
-                    focusedIn === 'vehicle' &&
-                    <div className='w-7/12 mx-auto py-10'>
-                        <div className='grid grid-cols-3 gap-20'>
-                            {
-                                products[0].products.map(product =>
-                                    <a href='./' className='text-center'>
-                                        <img src={product.asset} alt="" />
-                                        <h1>{product.title}</h1>
-                                    </a>)
-                            }
-                        </div>
+                {<div className={`w-7/12 mx-auto ${isFocused && 'py-10'}`}>
+                    <div className='grid grid-cols-3 gap-20'>
+                        {
+                            productsList.filter(productList => productList.id === focusedIn)[0]?.products.map(product =>
+                                <Link href='./' className='text-center'>
+                                    <img src={product.asset} alt="" />
+                                    <h1>{product.title}</h1>
+                                    <p className='text-sm underline text-slate-500'>Order</p>
+                                </Link>)
+                        }
                     </div>
-                }
-                {
-                    focusedIn === 'energy' && <div className='w-7/12 mx-auto py-10'>
-                        <div className='grid grid-cols-3 gap-20'>
-                            {
-                                products[1].products.map(product =>
-                                    <a href='./' className='text-center'>
-                                        <img src={product.asset} alt="" />
-                                        <h1>{product.title}</h1>
-                                    </a>)
-                            }
-                        </div>
-                    </div>
-                }
-                {
-                    focusedIn === 'charging' &&
-                    <div className='w-7/12 mx-auto py-10'>
-                        <div className='grid grid-cols-3 gap-20'>
-                            {
-                                products[2].products.map(product =>
-                                    <a href='./' className='text-center'>
-                                        <img src={product.asset} alt="" />
-                                        <h1>{product.title}</h1>
-                                    </a>)
-                            }
-                        </div>
-                    </div>
-                }
-                {
-                    focusedIn === 'shop' &&
-                    <div className='w-7/12 mx-auto py-10'>
-                        <div className='grid grid-cols-3 gap-20'>
-                            {
-                                products[3].products.map(product =>
-                                    <a href='./' className='text-center'>
-                                        <img src={product.asset} alt="" />
-                                        <h1>{product.title}</h1>
-                                    </a>)
-                            }
-                        </div>
-                    </div>
+                </div>
                 }
             </div>
         </div>

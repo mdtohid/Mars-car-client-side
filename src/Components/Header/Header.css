@@ -1,0 +1,7 @@
+.btnGlass{
+    background-color: rgb(0 0 0 / 5%);
+    backdrop-filter: blur(25px);
+    padding-inline: 8px;
+    padding-block: 4px;
+    border-radius: 6px;
+}
