@@ -14,21 +14,10 @@ import Home from './Components/Home/Home';
 import Modal from './Components/Modal/Modal';
 import NabvarModal from './Components/NabvarModal/NabvarModal';
 import ChildNavbarModal from './Components/ChildNavbarModal/ChildNavbarModal';
+import { Outlet } from 'react-router-dom';
 
 function App() {
-  // const [showModal, setShowModal] = useState(false);
-  // console.log(showModal);
-
-  // const openModal = () => {
-  //   setShowModal(true);
-  // };
-
-  // const closeModal = () => {
-  //   setShowModal(false);
-  // };
-
-
-  //................... Modal element .....................
+  // ******************* Modal *******************
   const [showModal, setShowModal] = useState('');
 
   const openModal = (value) => {
@@ -39,13 +28,13 @@ function App() {
     setShowModal('');
   };
 
-  console.log(showModal);
-
-
   return (
     <div className="slides">
       <Header openModal={openModal}></Header>
-      <Home></Home>
+
+      <Outlet />
+
+      {/* *********** Device Navbar Responsive Modal *************** */}
       <NabvarModal openModal={openModal} showModal={showModal} closeModal={closeModal}></NabvarModal>
       <ChildNavbarModal showModal={showModal} closeModal={closeModal} openModal={openModal}></ChildNavbarModal>
     </div>

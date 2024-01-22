@@ -38,7 +38,6 @@ const ChildNavbarModal = ({ showModal, closeModal, openModal }) => {
                                     }
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 )

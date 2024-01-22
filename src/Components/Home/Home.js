@@ -1,10 +1,5 @@
 import React from 'react';
-import img1 from '../../image/tesla-model-s-p100d-sunrise-mptdvnar4iloeun3.jpg';
-import img2 from '../../image/tesla-model-s-larte-design-l3lzeq7qeznvycnw.jpg';
-import img3 from '../../image/598342.jpg';
 import img4 from '../../image/tesla-cybertruck-concept-cars-3840x2400-882.jpg';
-import img5 from '../../image/Tesla-Roadster-103.jpg';
-import img6 from '../../image/0x0-roadster-05-1621869837.jpg';
 import img7 from '../../image/teslaProductsSetUp.webp';
 import './Home.css';
 
@@ -147,14 +142,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-{/* <div className='absolute top-[15%] left-0 w-full h-full text-center'>
-                        <h3 className='text-4xl font-semibold'>Model X</h3>
-                        <p className='text-2xl mt-2 font-semibold'>From $68,590*</p>
-                    </div>
-
-                    <div className='absolute bottom-[10%] w-full flex flex-col md:flex-row justify-center items-center gap-5'>
-                        <button className='w-64 bg-[#f4f4f4] px-6 py-2 rounded-lg font-semibold'>Shop Now</button>
-                        <button className='w-64 bg-[#222222] opacity-80 px-6 py-2 rounded-lg font-semibold text-white'>Order Now</button>
-                    </div> */}

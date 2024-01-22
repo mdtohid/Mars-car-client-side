@@ -1,0 +1,264 @@
+[
+    {
+        "id": "vehicles",
+        "products": [
+            {
+                "id": "modelS",
+                "asset": "https://i.ibb.co/nP30Tdb/Screenshot-2023-12-25-002307.png",
+                "title": "Model S",
+                "colorVariation": [
+                    {
+                        "id": "White",
+                        "asset": "https://i.ibb.co/9ndxgmq/Screenshot-2023-12-25-003251.png"
+                    },
+                    {
+                        "id": "Black",
+                        "asset": "https://i.ibb.co/pJffTvW/Screenshot-2023-12-25-003406.png"
+                    },
+                    {
+                        "id": "Red",
+                        "asset": "https://i.ibb.co/7RFzKbB/Screenshot-2023-12-25-003520.png"
+                    }
+                ],
+                "motorSizeVariation": [
+                    {
+                        "id": "littleMotor",
+                        "title": "Average Motor size",
+                        "price": "$71090",
+                        "detail": "Dual Motor All-Wheel Drive"
+                    },
+                    {
+                        "id": "bigMotor",
+                        "title": "Big Motor size",
+                        "price": "$86090",
+                        "detail": "Tri Motor All-Wheel Drive"
+                    }
+                ]
+            },
+            {
+                "id": "model3",
+                "asset": "https://i.ibb.co/FK6R3Cs/Screenshot-2023-12-25-002608.png",
+                "title": "Model 3",
+                "colorVariation": [
+                    {
+                        "id": "White",
+                        "asset": "https://i.ibb.co/9ndxgmq/Screenshot-2023-12-25-003251.png"
+                    },
+                    {
+                        "id": "Black",
+                        "asset": "https://i.ibb.co/pJffTvW/Screenshot-2023-12-25-003406.png"
+                    },
+                    {
+                        "id": "Red",
+                        "asset": "https://i.ibb.co/7RFzKbB/Screenshot-2023-12-25-003520.png"
+                    }
+                ],
+                "motorSizeVariation": [
+                    {
+                        "id": "littleMotor",
+                        "title": "Average Motor size",
+                        "price": "$71090",
+                        "detail": "Dual Motor All-Wheel Drive"
+                    },
+                    {
+                        "id": "bigMotor",
+                        "title": "Big Motor size",
+                        "price": "$86090",
+                        "detail": "Tri Motor All-Wheel Drive"
+                    }
+                ]
+            },
+            {
+                "id": "modelX",
+                "asset": "https://i.ibb.co/Smn9kMd/Screenshot-2023-12-25-002913.png",
+                "title": "Model X",
+                "colorVariation": [
+                    {
+                        "id": "White",
+                        "asset": "https://i.ibb.co/9ndxgmq/Screenshot-2023-12-25-003251.png"
+                    },
+                    {
+                        "id": "Black",
+                        "asset": "https://i.ibb.co/pJffTvW/Screenshot-2023-12-25-003406.png"
+                    },
+                    {
+                        "id": "Red",
+                        "asset": "https://i.ibb.co/7RFzKbB/Screenshot-2023-12-25-003520.png"
+                    }
+                ],
+                "motorSizeVariation": [
+                    {
+                        "id": "littleMotor",
+                        "title": "Average Motor size",
+                        "price": "$71090",
+                        "detail": "Dual Motor All-Wheel Drive"
+                    },
+                    {
+                        "id": "bigMotor",
+                        "title": "Big Motor size",
+                        "price": "$86090",
+                        "detail": "Tri Motor All-Wheel Drive"
+                    }
+                ]
+            },
+            {
+                "id": "modelY",
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Vehicles-Model-Y.png",
+                "title": "Model Y",
+                "colorVariation": [
+                    {
+                        "id": "White",
+                        "asset": "https://i.ibb.co/9ndxgmq/Screenshot-2023-12-25-003251.png"
+                    },
+                    {
+                        "id": "Black",
+                        "asset": "https://i.ibb.co/pJffTvW/Screenshot-2023-12-25-003406.png"
+                    },
+                    {
+                        "id": "Red",
+                        "asset": "https://i.ibb.co/7RFzKbB/Screenshot-2023-12-25-003520.png"
+                    }
+                ],
+                "motorSizeVariation": [
+                    {
+                        "id": "littleMotor",
+                        "title": "Average Motor size",
+                        "price": "$71090",
+                        "detail": "Dual Motor All-Wheel Drive"
+                    },
+                    {
+                        "id": "bigMotor",
+                        "title": "Big Motor size",
+                        "price": "$86090",
+                        "detail": "Tri Motor All-Wheel Drive"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "energy",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Panels.png",
+                "links": [
+                    {
+                        "href": "/solarpanels",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/energy/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Solar Panels"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Solar-Roof.png",
+                "links": [
+                    {
+                        "href": "/solarroof",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/solarroof/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Solar Roof"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Powerwall-US.png",
+                "links": [
+                    {
+                        "href": "/powerwall",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/powerwall/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Powerwall"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Energy-Megapack.png",
+                "links": [
+                    {
+                        "href": "/megapack",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/megapack/design",
+                        "text": "Order"
+                    }
+                ],
+                "title": "Megapack"
+            }
+        ]
+    },
+    {
+        "id": "charging",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Charging.png",
+                "links": [
+                    {
+                        "href": "/charging",
+                        "text": "Learn"
+                    }
+                ],
+                "title": "Charging"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Home-Charging.png",
+                "links": [
+                    {
+                        "href": "/home-charging",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "https://shop.tesla.com/category/charging#charging.at-home",
+                        "text": "Shop"
+                    }
+                ],
+                "title": "Home Charging"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Charging-Supercharging-NA.png",
+                "links": [
+                    {
+                        "href": "/supercharger",
+                        "text": "Learn"
+                    },
+                    {
+                        "href": "/findus",
+                        "text": "Find"
+                    }
+                ],
+                "title": "Supercharging"
+            }
+        ]
+    },
+    {
+        "id": "shop",
+        "products": [
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Charging.png",
+                "title": "Charging"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Vehicle-Accessories.png",
+                "title": "Vehicle Accessories"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Apparel.png",
+                "title": "Apparel"
+            },
+            {
+                "asset": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Mega-Menu-Shop-Lifestyle.png",
+                "title": "Lifestyle"
+            }
+        ]
+    }
+]

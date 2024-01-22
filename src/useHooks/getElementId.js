@@ -6,15 +6,11 @@ const getElementId = ({ setInViewElementId }) => {
     // Use React to select elements with a specific attribute
     const selectedElements = document.querySelectorAll('[id]');
 
-    // Update the component's state with the selected elements
-    // setSelectedElements(Array.from(selectedElements));
-
     // Define a callback function to handle intersections
      function handleIntersection(entries) {
         entries.forEach(async(entry) => {
             if (entry.isIntersecting) {
                 // Element is in view, log its ID
-                // console.log(`Element in view: ${entry.target.id}`);
                 await setInViewElementId(entry.target.id);
             }
         });
