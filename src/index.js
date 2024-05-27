@@ -1,34 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './Components/Home/Home';
-import ProductDetails from './Components/ProductDetails/ProductDetails';
-import Product from './Components/Product/Product';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import ProductDetails from "./Components/ProductDetails/ProductDetails";
+import Product from "./Components/Product/Product";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App></App>,
-    loader: () => fetch('/mainApi.json'),
+    loader: () => fetch("/mainApi.json"),
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Home></Home>,
       },
       {
-        path: 'product/:id',
+        path: ":category/:id",
         element: <Product></Product>,
-        loader: () => fetch('/mainApi.json')
+        loader: () => fetch("/mainApi.json"),
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
